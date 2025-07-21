@@ -39,13 +39,11 @@ function App () {
 
     const [page, setPage] = useState('home');
     const navigate = (to) => {
-        window.history.pushState({}, '', to);
-        const path = to.replace('/', '');
-        setPage(path || 'home');
+        window.location.hash = to;
     };
 
-    window.onpopstate = (e) => {
-        const path = window.location.pathname.replace('/', '');
+    window.onhashchange = () => {
+        const path = window.location.hash.replace('#/', '');
         setPage(path || 'home');
     };
 
