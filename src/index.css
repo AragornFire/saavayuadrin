@@ -1,0 +1,70 @@
+body {
+	background: url('./assets/background-blurred.png') center center repeat;
+	background-size: 20em;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	font-family: serif;
+	color: white;
+	margin: 0;
+}
+a {
+	text-decoration: none
+}
+img {
+	width: 100%;
+}
+.container {
+	width: 1000px;
+	border: 2px solid white;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.navbox {
+	background-color: indigo;
+	color: white;
+	font-style: italic;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-family: serif;
+}
+.flexbox {
+	display: flex;
+	justify-content: center;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.grid.columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+.floater {
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.arms {
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.flipped {
+	background-color: #ff000044;
+}
+.picked {
+	border-color: #edbe26;
+}
+.padding-top-5 {
+	padding-top: 5px;
+}
+.gap-20 {
+	gap: 20px;
+}
