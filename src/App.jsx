@@ -42,10 +42,15 @@ function App () {
         window.location.hash = to;
     };
 
-    window.onhashchange = () => {
-        const path = window.location.hash.replace('#/', '');
-        setPage(path || 'home');
-    };
+    useEffect(() => {
+        const onHashChange = () => {
+            const path = window.location.hash.replace('#/', '');
+            setPage(path || 'home');
+        };
+        window.addEventListener('hashchange', onHashChange);
+        onHashChange();
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
 
     let content;
     switch (page) { // Switch statements are so cool
