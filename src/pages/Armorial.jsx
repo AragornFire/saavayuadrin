@@ -1,5 +1,3 @@
-import '../index.css'
-
 const arms = [
 	{name: "Saava", href: "src/assets/saava.png", blazon: "Gules, a saltire raguly argent, a lion rampant holding a latin cross patty fitchy or."},
 	{name: "Klagarn", href: "src/assets/klagarnf.png", blazon: "Azure, a fess embattled counterembattled or, five roundels in cross counterchanged."},

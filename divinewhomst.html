@@ -1,13 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Divine Whomst</title>
-</head>
-<body>
-<div id="root"></div>
-<script type="module" src="/src/divinewhomst.jsx"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./src/index.css">
+		<title>Saava yu Adrin</title>
+	</head>
+	<body>
+		<div id="root"></div>
+			<div class="container">
+				<div>
+					<div class="flexbox padding-top-5">
+						<nav></nav>
+					</div>
+					<hr>
+					<h1>Divine Whomst</h1>
+					<div>
+						<div class="flexbox gap-20">
+							<div class="grid columns-4" id="boxed"></div>
+							<div class="floater">
+								<h2>Welcome to Divine Whomst!</h2>
+								<p>Pick a random coat of arms for the other to guess, using the blazon to clear up details if necessary</p>
+								<div class="flexbox gap-20">
+								<button onClick="shuffleArms('boxed')">Shuffle</button>
+								<button onClick="pickArms('boxed')">Auto Pick</button>
+								<button onClick="clearArms('boxed')">Clear Board</button>
+								<button onClick="resetArms('boxed')">New Game</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script src="./src/content.js"></script>
+		<script src="./src/divinewhomst.js"></script>
+	</body>
 </html>
