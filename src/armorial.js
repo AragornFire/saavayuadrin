@@ -21,7 +21,7 @@ arms.forEach((arm) => {
 	let bigdiv = document.createElement('div');
 	bigdiv.className = 'arms';
 	let img = document.createElement('img');
-	img.src = `./assets/${arm.href}.png`;
+	img.src = `./src/assets/${arm.href}.png`;
 	img.alt = arm.blazon;
 	bigdiv.appendChild(img);
 	let h3 = document.createElement('h3');
