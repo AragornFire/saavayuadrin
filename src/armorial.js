@@ -14,6 +14,9 @@ const arms = [
 	{name: 'Toni', href: 'toni', blazon: 'Azure, an anteater rampant argent armed and langued or.'},
 	{name: 'Tourment', href: 'tourment', blazon: 'Azure, a cockatrice displated or holding a key argent.'},
 	{name: 'Vaakkuna', href: 'vaakkuna', blazon: 'Or, beneath a chief nebuly a duck sable armed, langued, and beaked gules.'},
+	{name: 'Moman', href: 'moman', blazon: 'Azure, between in chief three bees proper and in base a beehive or a chevron burst argent.'},
+	{name: 'Gel Gems', href: 'gel', blazon: 'Purpure, resting upon a rainbow proper in base a skull argent pierced by a sword or.'},
+	{name: 'Fritzorino', href: 'fritz', blazon: 'Purpure, beneath a comble embattled or a griffin segreant argent beaked and armed or and langued gules holding a saber argent hilted gules and pommeled or'},
 ];
 
 const armorial = document.getElementById('armorial');
